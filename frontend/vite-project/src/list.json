@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "QABook",
+        "title": "QA is very important for software debugging and quality chek",
+        "price": 0,
+        "Category": "Free",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 2,
+        "name": "JavaScript",
+        "title": "JavaScript is a programming language",
+        "price": 10,
+        "Category": "Paid",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 3,
+        "name": "React",
+        "title": "React is a JavaScript library for building user interfaces",
+        "price": 0,
+        "Category": "Free",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 4,
+        "name": "Python",
+        "title": "Python is a versatile programming language",
+        "price": 20,
+        "Category": "Paid",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 5,
+        "name": "CSS",
+        "title": "CSS is used for styling web pages and maintain the animation ",
+        "price": 0,
+        "Category": "Free",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 6,
+        "name": "HTML",
+        "title": "HTML is the standard markup language for creating web pages",
+        "price": 8,
+        "Category": "Paid",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 7,
+        "name": "Node.js",
+        "title": "Node.js is a JavaScript runtime built on Chrome's V8 engine",
+        "price": 0,
+        "Category": "Free",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 8,
+        "name": "Django",
+        "title": "Django is a high-level Python web framework",
+        "price": 22,
+        "Category": "Paid",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 9,
+        "name": "Machine Learning",
+        "title": "Machine Learning is a subset of artificial intelligence",
+        "price": 25,
+        "Category": "Paid",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    },
+    {
+        "id": 10,
+        "name": "AI Fundamentals",
+        "title": "AI Fundamentals covers the basics of artificial intelligence",
+        "price": 30,
+        "Category": "Paid",
+        "image": "https://media.istockphoto.com/id/1957612313/photo/teenage-girl-sitting-on-windowsill-and-reading-a-book.jpg?s=612x612&w=is&k=20&c=VNZ1m9Isfu5OnscZ-XAaz6q0Z8Vpg-2Nr3Yp2f3Ix9M="
+    }
+]
