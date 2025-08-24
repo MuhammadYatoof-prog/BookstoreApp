@@ -1,0 +1,28 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "mern project",
+  "homepage": "https://github.com/MuhammadYatoof-prog/BookstoreApp#readme",
+  "bugs": {
+    "url": "https://github.com/MuhammadYatoof-prog/BookstoreApp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadYatoof-prog/BookstoreApp.git"
+  },
+  "license": "ISC",
+  "author": "Muhammad Yatoof",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

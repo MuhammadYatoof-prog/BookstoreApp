@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Login from '../Components/login';
+import { useAuth } from '../context/Authprovider';
+import Logout from './logout';
+// import { Link } from 'react-router-dom'; // Uncomment if using React Router
 
 export default function Navbar() {
+  const [authuser, setAuthuser] = useAuth();
   const [sticky, setSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,6 +21,9 @@ export default function Navbar() {
       <li className="font-semibold"><a href="/Courses">Course</a></li>
       <li className="font-semibold"><a href="/Contact">Contact</a></li>
       <li className="font-semibold"><a href="#">About</a></li>
+      {/* If using React Router:
+      <li className="font-semibold"><Link to="/">Home</Link></li>
+      */}
     </>
   );
 
@@ -77,13 +84,17 @@ export default function Navbar() {
             </select>
           </div>
 
-          {/* Login Button (always visible) */}
-          <button
-            className="btn btn-sm bg-black text-white hover:bg-slate-800 px-4 py-1 rounded-lg"
-            onClick={() => document.getElementById('my_modal_3').showModal()}
-          >
-            Login
-          </button>
+          {/* Login or Logout */}
+          {authuser ? (
+            <Logout />
+          ) : (
+            <button
+              className="btn btn-sm bg-black text-white hover:bg-slate-800 px-4 py-1 rounded-lg"
+              onClick={() => document.getElementById('my_modal_3').showModal()}
+            >
+              Login
+            </button>
+          )}
         </div>
 
         {/* Mobile Menu */}
@@ -94,8 +105,10 @@ export default function Navbar() {
         )}
       </nav>
 
-      {/* Your Dialog-based Login Modal */}
-      <Login />
+      {/* Dialog-based Login Modal */}
+      {/* <dialog id="my_modal_3" className="modal"> */}
+        <Login />
+      {/* </dialog> */}
     </>
   );
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import Login from './login';
-
+import axios from 'axios';
+import toast from 'react-hot-toast';
 function Signup() {
   const navigate = useNavigate();
   const {
@@ -11,11 +12,32 @@ function Signup() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log('Signup Data:', data);
-    // You can add signup logic here (e.g., API call)
-    navigate('/'); // Redirect after signup
+  const onSubmit = async (data) => {
+    const userinfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+      confirmpassword: data.confirmPassword,
+    };
+
+    try {
+      const response = await axios.post('http://localhost:4001/user/signup', userinfo);
+      if (response.data) {
+        toast.success('Signup successfully!');
+        navigate('/');
+
+        localStorage.setItem('user', JSON.stringify(response.data.user)); // ✅ Store as string
+      }
+    } catch (error) {
+      if (error.response) {
+
+        toast.error(error.response.data.message);}
+    }
   };
+
+  // You can add signup logic here (e.g., API call)
+  // Redirect after signup
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 relative">
@@ -39,11 +61,11 @@ function Signup() {
             <input
               type="text"
               placeholder="Enter your fullname"
-              {...register('name', { required: 'Name is required' })}
+              {...register('fullname', { required: 'Name is required' })}
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-zinc-900"
             />
-            {errors.name && (
-              <span className="text-sm text-red-600">{errors.name.message}</span>
+            {errors.fullname && (
+              <span className="text-sm text-red-600">{errors.fullname.message}</span>
             )}
           </div>
 
